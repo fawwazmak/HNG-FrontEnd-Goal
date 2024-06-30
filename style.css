@@ -1,3 +1,82 @@
+/* black:  #070d1b */
+/* purple: #9477ef  */
+/* white: #f0f1f4  */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #070d1b;
+  --purple: #9477ef;
+  --white: #f0f1f4;
+}
+
 body {
-    background-color: red;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+header {
+  background-color: var(--purple);
+  padding: 15px;
+  color: var(--white);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section .goal {
+  border-radius: 15px;
+  padding: 20px;
+  height: 30vh;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 30px 20px;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+@media (max-width: 992px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+section .goal:nth-child(odd) {
+  background-color: var(--white);
+  color: var(--purple);
+  transition: transform 1s;
+}
+
+section .goal:nth-child(odd):hover {
+  background-color: var(--purple);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+section .goal:nth-child(even) {
+  background-color: var(--purple);
+  color: var(--white);
+  transition: transform 1s;
+}
+
+section .goal:nth-child(even):hover {
+  background-color: var(--white);
+  color: var(--purple);
+  transform: scale(1.05);
 }
