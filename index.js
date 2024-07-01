@@ -1,14 +1,13 @@
-const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 setInterval(() => {
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
     const time = new Date();
     const dayNum = time.getUTCDate();
     const currentDay = daysOfWeek[dayNum];

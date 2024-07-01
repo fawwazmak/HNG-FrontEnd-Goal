@@ -12,7 +12,10 @@
 
 a {
   text-decoration: none;
-  color: var(--purple);
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 3px;
 }
 
 a:visited {
@@ -101,6 +104,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 30px;
+  color: var(--white);
 }
 
 header {
@@ -109,6 +113,8 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   color: var(--white);
+  position: sticky;
+  top: 0;
 }
 
 .links-to-others {
@@ -130,9 +136,6 @@ section {
   padding-right: 4rem;
 }
 
-
-
-
 @media (max-width: 992px) {
   .first-section {
     flex-direction: column;
@@ -144,7 +147,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 @media (max-width: 768px) {
   .flex-center {
